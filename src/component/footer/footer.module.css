@@ -1,0 +1,60 @@
+.container {
+    padding: 100px 50px;
+    border-top: 1px solid rgb(173, 171, 171);
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap:20px;
+}
+
+.wrapper .title {
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+.wrapper ul li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+.wrapper ul li a {
+    text-decoration: none;
+    color: rgb(78, 77, 77);
+}
+.wrapper .left{
+    flex:1;
+   
+}
+.wrapper .leftmiddle{
+    flex:1;
+    
+}
+.wrapper .rightmiddle{
+    flex:1;
+    
+}
+.rightmiddle .social {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+ 
+}
+.rightmiddle .social li {
+    margin-right: 10px;
+    height: 50px;
+    width:50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+.wrapper .rightmiddle p {
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.wrapper .right{
+    flex:1;
+   
+}

@@ -1,0 +1,144 @@
+.container {
+    background-color: rgb(227, 228, 228);
+    padding:100px 50px;
+}
+.head {
+    margin-bottom: 50px;
+}
+.header {
+    font-size: 30px;
+    font-weight: 600;
+}
+.subheader {
+    font-size: 22px;
+    font-weight:400;
+    color:#534e4e;
+ 
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items:center;
+}
+.left {
+    flex:1;
+    
+}
+.left .imgContainer {
+    display:flex;
+    align-items: center;
+    
+}
+.left img {
+    width:700px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.right {
+    flex:1;
+   
+    width:1000px;
+}
+
+.card_wrapper {
+    position: relative;
+    width:100%;
+    padding:0 10px;
+    box-sizing: border-box;
+}
+.card_wrapper:active, .card_wrapper:hover, .card_wrapper:focus {
+    outline: none;
+    border:none;
+}
+
+.card {
+    height: 450px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fff;
+    
+}
+.card:hover {
+    opacity: 0.7;
+}
+
+.card .card_image {
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 70%;
+    background-color: #303030;
+    
+    
+}
+
+
+.card .card_image img {
+    width:350px;
+    height:100%;
+    object-fit: cover;
+}
+
+.card .social_icon {
+   
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    position: absolute;
+    top:60%;
+    transform: translateY(240px);
+    transition: all 0.5s ease;
+}
+.card:hover .social_icon {
+    transform: translateY(0px);
+}
+.card .social_icon li {
+    margin-right:20px;
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+    background-color: #fff;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+.card .social_icon li:hover {
+    background-color: rgb(6, 141, 67);
+    color: #fff;
+}
+
+
+.card .details {
+    position: absolute;
+    bottom:20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.card .details h3 {
+    color:#303030;
+    font-weight: 300;
+    /* line-height: 20px; */
+    
+}
+.card .details h1 {
+    color:rgb(143, 13, 13);
+    
+}
+.slick-slider .slick-arrow{
+    width:20px;
+    height: 20px;
+    background-color: #fff;
+}
